@@ -19,9 +19,9 @@
             <tbody>
                 @foreach($viewData["products"] as $product)
                 <tr>
-                    <td>{{ $prduct->getId()}}</td>
-                    <td>{{ $prduct->getName()}}</td>
-                    <td>{{ $prduct->getPrice()}}</td>
+                    <td>{{ $product->getId()}}</td>
+                    <td>{{ $product->getName()}}</td>
+                    <td>{{ $product->getPrice()}}</td>
                     <td>{{ session('products')[$product->getId()] }}</td>
                 </tr>
                 @endforeach

@@ -32,7 +32,7 @@ class CartController extends Controller
         $products[$id] = $request->input("quantity"); // 'quantity' incase 
         $request->session()->put('products', $products);
         
-        return redirect->route('cart.index');
+        return redirect()->route('cart.index');
     }
 
     public function delete(Request $request)
