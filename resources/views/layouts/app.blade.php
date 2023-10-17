@@ -34,6 +34,7 @@
                     <a href="{{ route('login') }}" class="nav-link active">Login</a>
                     <a href="{{ route('register') }}" class="nav-link active">Register</a>
                     @else
+                    <a href="{{ route('myaccount.orders')}}" class="nav-link active">My Orders</a>
                     <form action="{{ route('logout') }}" id="logout" method="POST">
                         <a role="button" class="nav-link active"
                             onclick="document.querySelector('#logout').submit();">Logout</a>
